@@ -1,0 +1,27 @@
+GET http://localhost:5000/tokobuku
+
+###
+GET http://localhost:5000/tokobuku/1
+
+###
+POST http://localhost:5000/tokobuku
+Content-Type: application/json
+
+{
+    "buku": "bumi",
+    "penerbit": "TereLiye",
+    "harga": "120.000"
+}
+
+###
+PATCH http://localhost:5000/tokobuku/1
+Content-Type: application/json
+
+{
+    "buku": "Bulan",
+    "penerbit": "TereLiye",
+    "harga": "90.000"
+}
+
+###
+DELETE http://localhost:5000/tokobuku/2
